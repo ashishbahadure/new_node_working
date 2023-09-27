@@ -1,0 +1,24 @@
+<h1>
+    <button><a href="/">student form</a></button>
+</h1>
+<form action="/search_student" method="get">
+<input type="text" placeholder="search any" name="search_input" id=""><button>search</button>
+</form>
+<table border="1" width="100%" style="text-align: center;border-collapse: collapse;">
+<tr>
+    <th>id</th>
+    <th>customer name</th>
+<th>customer mobile</th>
+<th>customer dob</th>
+<th>customer address</th>
+</tr>
+<% for(i=0;i<cust_list.length;i++){ %>
+    <tr>
+    <td><%=i+1%></td>
+    <td><%=cust_list[i].customer_name%></td>
+    <td><%=cust_list[i].customer_mobile%></td>
+    <td><%=cust_list[i].customer_dob%></td>
+    <td><%=cust_list[i].customer_address%></td>
+    </tr>
+<%}%>
+</table>

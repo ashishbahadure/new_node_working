@@ -1,0 +1,35 @@
+<div>
+    <a href="/"><button>teacher_form</button></a>
+</div>
+<br><br>
+<form action="/search_teacher" method="get">
+    <input type="text" placeholder="search info" name="search_input" id=""><button>search</button>
+</form>
+<table border="2" width="100%" style="border-collapse: collapse;text-align: center;font-size: 20px;background-color: blueviolet;color: rgb(233, 240, 237);">
+<tr>
+    <th>edit record</th>
+    <th>delete record</th>
+    <th>teacher_id</th>
+    <th>teacher_name</th>
+    <th>teacher_email</th>
+    <th>teacher_mobile</th>
+    <th>teacher_dob</th>
+</tr>
+<% for(i=0;i<teacher_list.length;i++){%>
+
+<tr>
+    <td>
+        <a href="/edit_teacher?id=<%=teacher_list[i]['teacher_id']%>"><button>Edit</button></a>
+    </td>
+    <td>
+        <a href="/delete_teacher?id=<%=teacher_list[i]['teacher_id']%>"><button>delete</button></a>
+    </td>
+    <td><%=i+1%></td>
+    <td><%=teacher_list[i].teacher_name%></td>
+    <td><%=teacher_list[i].teacher_email%></td>
+    <td><%=teacher_list[i].teacher_mobile%></td>
+    <td><%=teacher_list[i].teacher_dob%></td>
+</tr>
+
+    <%}%>
+</table>

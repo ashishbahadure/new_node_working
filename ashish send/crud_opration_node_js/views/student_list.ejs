@@ -1,0 +1,31 @@
+<h1>student list</h1>
+<a href="/">student form</a><br><br>
+<form action="/search_student">
+    <input type="text" name="search_student" id=""><button>search</button>
+</form>
+<table width="100%" border="1" sellspadding="5" sellspacing="5">
+    <tr>
+        <th>edit</td>
+        <th>student_id</th>
+        <th>student_name</th>
+        <th>student_mobile</th>
+        <th>student_dob</th>
+        <th>student_photo</th>
+    </tr>
+
+    <% for(var i=0;i<stud_info.length;i++){%>
+
+        <tr>
+            <td><a href="/edit_student?id=<%=stud_info[i].student_id%>"><button>edit</button></a></td>
+            <td><%=stud_info[i].student_id%></td>
+            <td><%=stud_info[i].student_name%></td>
+            <td><%=stud_info[i].student_mobile%></td>
+            <td><%=stud_info[i].student_dob%></td>
+            <td style="margin: auto;">
+                <img style="width: 10% ;margin:auto; padding: 5px;" src="uploads/<%=stud_info[i].student_photo%>" alt="">
+            </td>
+        </tr>
+
+        <%}%>
+
+</table>

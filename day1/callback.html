@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        function execute(fname)
+        {
+            console.log(fname);
+            console.log(fname(5));
+        }
+    //   var cube=
+       execute(function(num)
+       {
+        return num*num*num;
+       });
+       execute(function(num)
+       {
+        return num*num;
+       });
+    </script> -->
+<!-- 
+
+
+    <script>
+        function calc(fname)
+        {
+            // console.log(fname);
+            console.log(fname(15,5));
+        }
+        // var add=function(num,num2){
+        //     return num+num2;
+        // }
+        calc(function(num,num2){
+            return num+num2;
+        })
+        calc(function(num,num2){
+            return num-num2;
+        });
+        calc(function(num,num2){
+            return num*num2;
+        });
+    </script> -->
+    <!-- <script>
+        function calc(fname)
+        {
+            console.log(fname(4,5));
+        }
+        // var c=10;
+        var add=function(num1,num2)
+        {
+            return num1+num2;
+            
+        }
+        calc(function(num1,num2)
+        {
+            return num1+num2;
+            
+        });
+        
+    </script> -->
+
+    <script>
+    //     var add=function(num1,num2){
+    //        return num1-num2;
+    //    }
+
+        function calc(fname)
+        {
+            console.log(fname(2,4))
+        }
+        calc(function(num1,num2){
+           return num1+num2;
+       });
+
+       calc(function(req,res){
+            return num1-num2;
+        })
+
+        var add=()=>{
+            
+        }
+       
+       
+         
+    
+
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbered List without OL</title>
+    <style>
+        .custom-list {
+            counter-reset: my-counter; /* Reset the counter */
+            list-style: none; /* Remove default list styles */
+        }
+
+        .custom-list li:before {
+            content: counter(my-counter); /* Use the counter content */
+            counter-increment: my-counter; /* Increment the counter */
+            margin-right: 0.5em; /* Add some space between number and content */
+        }
+    </style>
+</head>
+<body>
+    <ul class="custom-list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+</body>
+</html>

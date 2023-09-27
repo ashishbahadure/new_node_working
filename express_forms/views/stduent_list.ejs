@@ -1,0 +1,16 @@
+<a href="/">add_student</a>
+<table border="1" width="100%">
+    <tr>
+    <th>name</th>
+    <th>email</th>
+   </tr>
+
+<% for(var i=0;i<student.length;i++){ %>
+
+    <tr>
+        <td><%=student[i].student_name%></td>
+        <td><%=student[i].student_mobile%></td>
+       </tr>
+<%}%>
+
+</table>

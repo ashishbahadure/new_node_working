@@ -1,0 +1,9 @@
+
+<form action="/update_product" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="student_id" id="">
+    <input type="text" name="student_name" value="<%=file_data[0].student_name%>"id="">
+
+    <input type="file" name="student_photo" id="">
+    <img src="uploads/<%=file_data[0].student_photo%>" width="100px" alt="">
+    <button>update</button>
+</form>

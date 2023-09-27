@@ -1,0 +1,14 @@
+
+<a href="/"> add student</a><br><br>
+<table border="1" width="100%" cellspacing="5" cellspadding="5">
+    <tr>
+        <th>student_name</th>
+        <th>student_mobile</th>
+    </tr>
+    <% for(var i=0;i<students.length;i++){ %>
+        <tr>
+            <td><%=students[i].student_name%></td>
+            <td><%=students[i].student_mobile%></td>
+        </tr>
+    <%}%>
+</table>

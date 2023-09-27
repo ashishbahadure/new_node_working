@@ -1,0 +1,25 @@
+
+<form action="/save_information" method="post" enctype="multipart/form-data">
+    <label for="">enter your name</label>
+    <input type="text" name="student_name" id=""><br><br>
+    <label for="">enter your photo</label>
+    <input type="file" name="student_photo" id=""><br><br>
+    <button>register user</button>
+</form>
+<table width="100%" border="1">
+    <tr>
+        <th>id</th>
+        <th>student_name</th>
+        <th>student_img</th>
+    </tr>
+    <% for(var i=0;i<product.length;i++){%>
+        <tr>
+            <td><a href="/edit_file?id=<%=product[i].student_id%>"><button>edit</button></a></td>
+            <td><%=product[i].student_id%></td>
+            <td><%=product[i].student_name%></td>
+            <td>
+                <img style="width: 100px;height: 100px;margin: 5px;" src="uploads/<%=product[i].student_photo%>" alt="">
+            </td>
+        </tr>    
+    <%}%>
+</table>

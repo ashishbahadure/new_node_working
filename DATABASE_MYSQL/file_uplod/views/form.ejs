@@ -1,0 +1,30 @@
+<form action="/save_product" method="post" enctype="multipart/form-data">
+    product name: <input type="text" name="product_name" id="" required><br><br>
+    product price: <input type="number" name="product_price" id="" required><br><br>
+    product details: <textarea type="text" name="product_details" id="" required></textarea><br><br>
+    product image: <input type="file" name="product_image" id="" required><br><br>
+    <button>save product</button>
+</form>
+<table border="1" width="100%" cellspacing="5" cellspadding="5">
+    <tr>
+        <th></th>
+        <th>srno</th>
+        <th>product Name</th>
+        <th>product price</th>
+        <th>product Details</th>
+        <th>product Image</th>
+    </tr>
+    <% for(var i=0;i<products.length;i++){%>
+        
+        <tr>
+            <td><a href="/edit_product?id=<%=products[i].product_id%>"><button>edit</button></a></td>
+            <td><%=i+1%></td>
+            <td><%=products[i].product_name%></td>
+            <td><%=products[i].product_price%></td>
+            <td><%=products[i].product_details%></td>
+            <td>
+                <img src="uploads/<%=products[i].product_image%>"style="height:40px;width:40px;padding:10px;" alt="">
+            </td>
+        </tr>
+        <%}%>
+</table>

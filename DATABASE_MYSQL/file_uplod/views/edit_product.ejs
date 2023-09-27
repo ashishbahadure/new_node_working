@@ -1,0 +1,9 @@
+<form action="/update_product" method="post" enctype="multipart/form-data">
+<input type="hidden" name="product_id" value="<%=product_det[0].product_id%>" id="">
+<input type="text" name="product_name" value="<%=product_det[0].product_name%>" id="">
+<input type="number" name="product_price" value="<%=product_det[0].product_price%>" id="">
+<textarea  name="product_details"><%=product_det[0].product_name%></textarea>
+<input type="file" name="product_image" id="">
+<img src="uploads/<%=product_det[0].product_image%>" width="100px" alt="">
+<button>update details</button>
+</form>

@@ -1,0 +1,12 @@
+
+
+<form action="/update_student" method="post" enctype="multipart/form-data"><br><br>
+    <input type="text" name="student_id" value="<%=file_data[0].student_id%> ">
+    <input type="text" name="student_name" value="<%=file_data[0].student_name%>" id=""><br><br>
+    <input type="number" name="student_mobile" value="<%=file_data[0].student_mobile%>" id=""><br><br>
+    <input type="text" name="student_dob" value="<%=file_data[0].student_dob%>" id=""><br><br>
+    <input type="file" name="student_photo" value="" id="">    
+    <img style="width: 200px;" src="uploads/<%=file_data[0].student_photo%>" width="100px" alt="">
+    <br><br><br><button>update</button>
+
+</form>

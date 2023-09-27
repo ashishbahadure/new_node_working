@@ -1,0 +1,14 @@
+<h1>edit student form</h1>
+<form action="/save_edited_student" method="post">
+    <input type="hidden" value="
+    <%=student_det[0].student_id%>" name="student_id" id="">
+    enter new name <input type="text" name="student_name" value="
+<%=student_det[0].student_name%>" id=""><br><br>
+    enter new mobile <input type="text" name="student_mobile"value="
+    <%=student_det[0].student_mobile%>" id=""><br><br>
+    enter new email <input type="text" name="student_email" value="
+    <%=student_det[0].student_email%>" id=""><br><br>
+    enter new password <input type="text" name="student_password"value="
+    <%=student_det[0].student_password%>"  id=""><br><br>
+    <button>update</button>
+</form>
